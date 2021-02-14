@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: 62.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  body {
+    color: rgb(32, 32, 32);
+  }
+h1 {
+    color: white;
+}
+h3{
+    padding-bottom: 5px;
+}
+
+#article_page{
+    width: 100%;
+    height: 250px;
+    background-color: #ce0033;
+}
+#article_page > h1{
+    padding: 40px 0 0 30px;
+}
+
+#div_login{
+    position: absolute;
+    top: 10px;
+    left: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+#first_article{
+    position: relative;
+    top: -160px;
+    left: 8%;
+    width: 80%;
+    height: 300px;
+    background-color: #F3EFEF;
+    border: 1px solid #ce0033;
+    border-radius: 15px 15px 0px 0px;
+}
+#first_article > a > figure > img{
+    width: 100%;
+    height: 200px;
+}
+
+figure > img {
+    border-radius: 15px 15px 0px 0px;
+    padding-bottom: 7px;
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+} 
+figcaption{
+    padding: 7px;
+}
+
+a {
+    text-decoration: none;
+    color: #383535;
+}
+
+#list_products{
+    position: relative;
+    top: -140px;
+    width: 90%;
+    left: 5%;
+    border-radius: 15px;
+    
+}
+
+#list_products > a > figure{
+    border: 1px solid #ce0033;
+    background-color: #F3EFEF;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #ce0033;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
+    gap: 10px;
+}
+.logoFooter {
+    max-width: 50%;
+}
+.links{
+    display: flex;
+    
+}
+
+footer a {
+    color : white;
+    text-decoration: none;
+    margin:10px;
+}
+
+.icones{
+   
+    text-align: center;
+} 
+.icones img{
+    max-width: 5%;
+    margin-bottom: 10px;
+       
+}
+
+
+/* ############################## FIN FOOTER ########################### */
+
+
+@media screen and (min-width : 960px){
+    #article_page{
+        width: 100%;
+        height: 250px;
+        background-color: #ce0033;
+    }
+
+    #div_login{
+        left: 93%;
+    }
+
+    #first_article{
+        top: -160px;
+        left: 15%;
+        width: 70%;
+        height: 400px;
+    }
+
+    #first_article > a > figure > img{
+        width: 100%;
+        height: 300px;
+    }
+
+    #list_products{
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        top: -100px;
+        left: 5%;
+        border-radius: 15px;
+        
+    }
+    #list_products > a {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+}

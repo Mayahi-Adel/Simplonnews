@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/errors.css">
+    <script src="js/index.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <section>
+        <div class="imgBx">
+            <img src="img/photoForm-2.jpg" alt="">
+        </div>
+        <div class="contentBx">
+            <div class="formBx">
+                <h2>Connexion</h2>
+                <div id="msg_alert"></div>
+                <form action="">
+                    <div class="inputBx">
+                        <span>Email : </span>
+                        <input id="email" type="mail" value="" onblur="form_control(this.id)">
+                    </div>
+                    <div class="inputBx">
+                        <span>Mot de passe :</span>
+                        <input type="password" id="password" name="">
+                    </div>
+                    <div class="remember">
+                        <label><input type="checkbox" name=""> Se souvenir de moi</label>
+                    </div>
+                    <div class="inputBx">
+                        <input type="button" value = "Se connecter"  onclick="submit_form('cnx',['email', 'password'])">
+                    </div>
+                    <div class="inputBx">
+                        <p>Vous n'avez pas encore un compte? <a onclick="open_insc_form()">S'inscrire</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="js/api_cnx.js"></script>
+</body>
+</html>
