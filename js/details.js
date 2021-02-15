@@ -66,12 +66,6 @@ console.log(articles.articles[0].Category);
 
 getDetailsArticle();
 
-// distruction du localStorage => deconnexion
-function distroy_cnx(){
-    localStorage.removeItem('token');
-    location.href = "index.html";
-}
-
 function getCategories() {
     let url = "https://simplonews.brianboudrioux.fr/categories";
     let token = localStorage.getItem('token');

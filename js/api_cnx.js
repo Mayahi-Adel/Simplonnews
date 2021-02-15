@@ -34,3 +34,9 @@ function generateResponseApi(data, statut){
 
     }
 }
+
+// destruction du localStorage => deconnexion
+function distroy_cnx() {
+    localStorage.removeItem('token');
+    location.href = "../index.html";
+}
