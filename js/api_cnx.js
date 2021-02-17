@@ -27,8 +27,8 @@ function generateResponseApi(data, statut){
     }
     else if (statut == "insc"){
 
-        location.href = "index.html";
-        setTimeout(error_control,300, "", "valid", "inscription réussie.");
+        open_cnx_form();
+        error_control("", "valid", "inscription réussie.");
         
         
 

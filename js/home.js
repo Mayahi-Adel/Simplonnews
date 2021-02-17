@@ -100,12 +100,6 @@ function generateError(data, error, id) {
     }
 }
 
-// destruction du localStorage => deconnexion
-function distroy_cnx() {
-    localStorage.removeItem('token');
-    location.href = "index.html";
-}
-
 
 
 // function createNewArticle(){
